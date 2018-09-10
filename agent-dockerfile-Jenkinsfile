@@ -1,0 +1,15 @@
+pipeline {
+    agent { dockerfile true }
+    stages {
+        stage('Java バージョン') {
+            steps {
+                echo 'java -version'
+            }
+        }
+        stage('Debian バージョン') {
+            steps {
+                echo 'cat /etc/issue'
+            }
+        }
+    }
+}
