@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('Java バージョン') {
             steps {
-                echo 'java -version'
+                sh 'java -version'
             }
         }
         stage('Debian バージョン') {
             steps {
-                echo 'cat /etc/issue'
+                sh 'cat /etc/issue'
             }
         }
     }
