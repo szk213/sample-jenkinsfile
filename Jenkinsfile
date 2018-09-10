@@ -1,6 +1,6 @@
 pipeline {
     agent { 
-        node { label 'CentOS' }
+        node { label 'master' }
      }
     stages {
         stage('ステージ1') {
